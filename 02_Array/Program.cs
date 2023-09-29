@@ -392,7 +392,15 @@ namespace _02_Array
             #endregion
             #region Params
             int[] arr = new int[] { 3, 3, 3, 7, 7, 7 };
+            for (int i = 0; i < arr.Length; i++)
+            {
+                arr[i] = int.Parse(Console.ReadLine()!);
+            }
 
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.WriteLine(arr[i]);
+            }
             //ShowArray(10, arr);
             ShowArray("hello", 10, 15, 14, 47, 2, 3, 6, 9, 8);
             //int a = 5;
