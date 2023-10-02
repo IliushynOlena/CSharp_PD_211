@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_Array", "02_Array\02_Arr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03_Enum", "03_Enum\03_Enum.csproj", "{8C4CB255-05CD-471C-A395-43DFDF9285D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_String", "04_String\04_String.csproj", "{BDC698A8-751C-4169-B2F3-80663CD34EF8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04_String", "04_String\04_String.csproj", "{BDC698A8-751C-4169-B2F3-80663CD34EF8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_StringBuilder", "05_StringBuilder\05_StringBuilder.csproj", "{093D77DD-5D75-44EB-B202-45D4F3D7A031}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05_StringBuilder", "05_StringBuilder\05_StringBuilder.csproj", "{093D77DD-5D75-44EB-B202-45D4F3D7A031}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_IntroToOOP", "06_IntroToOOP\06_IntroToOOP.csproj", "{5829E25E-187A-419F-8BD1-6B5713602CBD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{093D77DD-5D75-44EB-B202-45D4F3D7A031}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{093D77DD-5D75-44EB-B202-45D4F3D7A031}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{093D77DD-5D75-44EB-B202-45D4F3D7A031}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5829E25E-187A-419F-8BD1-6B5713602CBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5829E25E-187A-419F-8BD1-6B5713602CBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5829E25E-187A-419F-8BD1-6B5713602CBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5829E25E-187A-419F-8BD1-6B5713602CBD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
