@@ -8,7 +8,7 @@ namespace _06_IntroToOOP
 {
     partial class Point
     {
-
+        //full properties
         private int xCoord;
         //Properties
         public int XCoord

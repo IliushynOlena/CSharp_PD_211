@@ -7,7 +7,7 @@ namespace _05_StringBuilder
         static void Main(string[] args)
         {
             string str = "Hello";//5b
-            str += ", world!!!";
+            str += ", world!!!";//10b
             str += ", world!!!";
             str += ", world!!!";
 

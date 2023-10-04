@@ -55,9 +55,10 @@ namespace _06_IntroToOOP
         //{
         //    get { return name; }
         //    set { name = value; }
-        //}
+        //}       
+        
+        public string Name { get; set; }//private string name;
         //Auto property - prop + Tab
-        public string Name { get; set; }
         public string Type { get; }//readonly property
 
         public string Color { get; private set; } = "Green";
@@ -88,7 +89,7 @@ namespace _06_IntroToOOP
       
 
     }
-    public class Program
+     class Program//internal
     {      
         static void Main(string[] args)
         {
