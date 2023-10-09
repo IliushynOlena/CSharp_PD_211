@@ -63,7 +63,7 @@ namespace _07_StructRefOut
         public int Height
         {
             get { return height; }
-            set 
+            set
             {
                 if (value < 0)
                     throw new ArgumentException("Invalid height");
@@ -71,6 +71,11 @@ namespace _07_StructRefOut
             }
         }
         public int Width { get; set; }
+
+        void Edit(int n)
+        {
+            Height = n;//135465465465456465456
+        }
         public void Print()
         {
             Console.WriteLine($"Rectangle : {Height} - {Width}");
@@ -125,10 +130,13 @@ namespace _07_StructRefOut
 
         static void Main(string[] args)
         {
+            //Console.ReadKey()== ConsoleKey.Escape
             try
             {
+
                 string name = Console.ReadLine();
-                int a = int.Parse(name);    
+                DateTime a = DateTime.Parse(name);
+                Console.WriteLine(a);
                 float price = float.Parse(Console.ReadLine());
               
 
