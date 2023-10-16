@@ -113,6 +113,24 @@
     {
         static void Main()
         {
+
+            int[] arr = new int[] { 7, 9, 12, 4, 5, 8, 6, 3, 14 };
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.Write(arr[i] + " ");
+            }
+            Console.WriteLine();
+            Array.Sort(arr);
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.Write(arr[i] + " ");
+            }
+            Console.WriteLine();
+            Array.Reverse(arr);
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.Write(arr[i] + " ");
+            }
             //Director director = new Director
             IManager director = new Director
             {
@@ -178,10 +196,11 @@
 
 
             Administrator admin = new Administrator();//references - address
-
+           
 
             IManager manager = admin;//address
             manager.Control();
+            
 
             IWorkable worker = admin;
             worker.Work();
