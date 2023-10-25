@@ -135,8 +135,8 @@ namespace _07_StructRefOut
             {
 
                 string name = Console.ReadLine();
-                DateTime a = DateTime.Parse(name);
-                Console.WriteLine(a);
+                DateTime d = DateTime.Parse(name);
+                Console.WriteLine(d);
                 float price = float.Parse(Console.ReadLine());
               
 
@@ -170,16 +170,14 @@ namespace _07_StructRefOut
            
             Console.WriteLine("Continue................");
 
-
-
-            /*
+            
 
             Point point = new Point();//references type - new - get dynam memory
 
             Rectangle r = new Rectangle();//value type - new - default constructor
 
             int a;
-            */
+            
             //int h = 0, m = 0, s = 0 ;
             //Console.WriteLine($"Time : {h}:{m}:{s}");
             //GetCurrentTime(ref h,ref  m,ref s);
