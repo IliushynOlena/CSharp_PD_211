@@ -117,7 +117,7 @@ namespace _18_GenericCollection
     /// <summary>Generic Class for Point</summary>
     /// <typeparam name="T1">Type of X coord</typeparam>
     /// <typeparam name="T2">Type of Y coord</typeparam>
-
+     //template<typename T>
     class Point<T1, T2>// where T1 : class, IComparable<T1>, new()// where T2 : class, IComparable<T2>, new()
     {
         // do not allow to use arif and logic operations for generic types: T1, T2
