@@ -40,33 +40,33 @@ namespace _21_Serializable
     {
         static void Main(string[] args)
         {
-            //List<Person> people = new List<Person>()
-            //{
-            //     new Person(11111111){ Name = "Jack", Age = 25},
-            //     new Person(22222222){ Name = "Bob", Age = 15},
-            //     new Person(33333333){ Name = "Tom", Age = 45}
-            //};
-            //foreach (var item in people)
-            //{
-            //    Console.WriteLine(item);
-            //    Console.WriteLine();
-            //}
+            List<Person> people = new List<Person>()
+            {
+                 new Person(11111111){ Name = "Jack", Age = 25},
+                 new Person(22222222){ Name = "Bob", Age = 15},
+                 new Person(33333333){ Name = "Tom", Age = 45}
+            };
+            foreach (var item in people)
+            {
+                Console.WriteLine(item);
+                Console.WriteLine();
+            }
 
             BinaryFormatter formatter = new BinaryFormatter();
 
-            //try
-            //{
-            //    using (Stream fstream = File.Create("People.bin"))
-            //    {
-            //        formatter.Serialize(fstream, people);
-            //    }
-            //    Console.WriteLine("Binary Serialize Ok!!!");
-            //}
-            //catch (Exception ex)
-            //{
+            try
+            {
+                using (Stream fstream = File.Create("People.bin"))
+                {
+                    formatter.Serialize(fstream, people);
+                }
+                Console.WriteLine("Binary Serialize Ok!!!");
+            }
+            catch (Exception ex)
+            {
 
-            //    Console.WriteLine(ex.Message);
-            //}
+                Console.WriteLine(ex.Message);
+            }
 
             List<Person> newList = null;
             using (Stream fstream = File.OpenRead("People.bin"))

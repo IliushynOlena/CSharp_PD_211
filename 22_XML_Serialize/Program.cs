@@ -54,6 +54,7 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            /*
             User user = new User();
             bool isValid = true;
             do
@@ -102,39 +103,39 @@ namespace ConsoleApp1
             } while (!isValid);
           
             Console.WriteLine("Model is valid");
-
-            /*
+            */
+           
             List<Person> persons = new List<Person>()
             {
                 new Person(123654) { Name = "Olena", Age = 21 },
                 new Person(987456) { Name = "Mukola", Age = 22 },
                 new Person(258963) { Name = "Oksana", Age = 23 }
             };
-            */
-            /*
-            try
-            {
-                string filename = "Persons.json";
-                string jsonString = JsonSerializer.Serialize(persons);
-                File.WriteAllText(filename, jsonString);
-
-                jsonString = File.ReadAllText(filename);
-                List<Person> newpersons = JsonSerializer.Deserialize<List<Person>>(jsonString);
-                foreach (var item in newpersons)
-                {
-                    Console.WriteLine(item);
-                }
-
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-
-            }
-
-            */
 
             /*
+           try
+           {
+               string filename = "Persons.json";
+               string jsonString = JsonSerializer.Serialize(persons);
+               File.WriteAllText(filename, jsonString);
+
+               jsonString = File.ReadAllText(filename);
+               List<Person> newpersons = JsonSerializer.Deserialize<List<Person>>(jsonString);
+               foreach (var item in newpersons)
+               {
+                   Console.WriteLine(item);
+               }
+
+           }
+           catch (Exception ex)
+           {
+               Console.WriteLine(ex.Message);
+
+           }
+           */
+
+
+
             XmlSerializer serializer = new XmlSerializer(typeof(List<Person>));
             //XmlSerializer xmlFormat = new XmlSerializer(typeof(List<Person>));
             try
@@ -163,7 +164,7 @@ namespace ConsoleApp1
                 Console.WriteLine(ex.Message);
 
             }
-            */
+            
         }
     }
 }
